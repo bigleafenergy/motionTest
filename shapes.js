@@ -54,7 +54,7 @@ const createShape = function (x, y) {
 
 //add a static white ball
 
-const bigBall = Bodies.circle(w / 2, h / 2, Maht.min(w/4, h/2), {
+const bigBall = Bodies.circle(w / 2, h / 2, Math.min(w/4, h/4), {
   isStatic: true,
   render: {
     fillStyle: "cornflowerblue",
@@ -138,7 +138,7 @@ requestAnimationFrame(changeGravity)
 window.addEventListener("deviceorientation", function(event){
 
   engine.world.gravity.y = event.beta / 30
-  engine.world.gravity.x = event.gamma /30
+  engine.world.gravity.x = event.gamma / 30
 })
 
 
