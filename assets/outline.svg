@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="38px" height="50px" viewBox="0 0 38 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.2 (57519) - http://www.bohemiancoding.com/sketch -->
+    <title>Artboard 4</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polyline id="path-1" points="0 0.0553056517 37.8289332 0.0553056517 37.8289332 50 0 50"></polyline>
+        <polygon id="path-3" points="0 0.0553056517 37.8289332 0.0553056517 37.8289332 50 0 50"></polygon>
+    </defs>
+    <g id="Artboard-4" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Page-1">
+            <polygon id="Fill-1" fill="#FFFFFF" points="16.4190596 0.0552941176 12.4011385 1.76100346 16.0704729 10.3973933 7.68725546 13.9562745 4.01792111 5.31976932 0 7.02547866 8.93598302 28.0579469 12.9539041 26.3522953 9.13064236 17.3534487 17.5138598 13.7946251 21.3371215 22.7934717 25.3550427 21.0877624"></polygon>
+            <g id="Group-10">
+                <g id="Group-4">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <g id="Clip-3"></g>
+                    <path d="M37.7769049,15.0650807 C37.4835889,16.5616205 36.0321248,17.5371684 34.5349672,17.2439735 C33.0378095,16.9507785 32.0618589,15.4999135 32.3551749,14.0033737 C32.6484909,12.5068339 34.0999549,11.531286 35.5971126,11.824481 C37.0942702,12.1176759 38.0702208,13.5685409 37.7769049,15.0650807" id="Fill-2" fill="#FFFFFF" mask="url(#mask-2)"></path>
+                </g>
+                <polygon id="Fill-5" fill="#FFFFFF" points="28.4914466 36.5911822 30.8477823 24.5682872 35.1316148 25.4071569 32.775279 37.4300519"></polygon>
+                <g id="Group-9">
+                    <mask id="mask-4" fill="white">
+                        <use xlink:href="#path-3"></use>
+                    </mask>
+                    <g id="Clip-8"></g>
+                    <polygon id="Fill-7" fill="#FFFFFF" mask="url(#mask-4)" points="0 41.5162168 30.8766408 50.0000115 31.8374757 46.5057785 0.960892509 38.0219839"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
