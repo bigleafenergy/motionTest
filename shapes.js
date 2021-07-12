@@ -54,7 +54,7 @@ const createShape = function (x, y) {
 
 //add a static white ball
 
-const bigBall = Bodies.circle(w / 2, h / 2, 250, {
+const bigBall = Bodies.circle(w / 2, h / 2, Maht.min(w/4, h/2), {
   isStatic: true,
   render: {
     fillStyle: "cornflowerblue",
