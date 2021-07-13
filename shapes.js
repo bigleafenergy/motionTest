@@ -130,13 +130,16 @@ requestAnimationFrame(changeGravity)
 
 }
 
-// changeGravity();
+
+if (w > 960) {
+  changeGravity();
+}
+
 
 
 //adding motion sensitive gravity to mobile
 
 window.addEventListener("deviceorientation", function(event){
-
   engine.world.gravity.y = event.beta / 30
   engine.world.gravity.x = event.gamma / 30
 })
