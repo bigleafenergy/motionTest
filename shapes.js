@@ -121,7 +121,7 @@ const changeGravity= function (){
 
 
 
-time = time + 0.02
+time = time + 0.015
 
 // engine.world.gravity.y= Math.cos(time)
 engine.world.gravity.y = Math.cos(time)
