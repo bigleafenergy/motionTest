@@ -44,7 +44,9 @@ const createShape = function (x, y) {
   return Bodies.rectangle(x, y, 38, 50, {
     render: {
       sprite: {
-        texture: "assets/outline-2x.png",
+        //texture: "assets/outline-icon.png",
+        texture: "assets/no-outline-icon.png",
+        //texture: "assets/outline-2x.png",
         xScale: 0.5,
         yScale: 0.5,
       },
@@ -54,7 +56,7 @@ const createShape = function (x, y) {
 
 //add a static white ball
 
-const bigBall = Bodies.circle(w / 2, h / 2, Math.min(w/4, h/4), {
+const bigBall = Bodies.circle(w / 2, h / 2, Math.min(w / 4, h / 4), {
   isStatic: true,
   render: {
     fillStyle: "cornflowerblue",
@@ -110,41 +112,28 @@ document.addEventListener("click", function (e) {
   Composite.add(engine.world, shape);
 });
 
-
-
-
 //add gravity to engine's world
 
-let time = 0
+let time = 0;
 
-const changeGravity= function (){
+const changeGravity = function () {
+  time = time + 0.003;
 
+  engine.world.gravity.y = Math.cos(time);
 
-
-time = time + 0.015
-
-// engine.world.gravity.y= Math.cos(time)
-engine.world.gravity.y = Math.cos(time)
-
-requestAnimationFrame(changeGravity)
-
-}
-
+  requestAnimationFrame(changeGravity);
+};
 
 if (w > 960) {
   changeGravity();
 }
 
-
-
 //adding motion sensitive gravity to mobile
 
-window.addEventListener("deviceorientation", function(event){
-  engine.world.gravity.y = event.beta / 30
-  engine.world.gravity.x = event.gamma / 30
-})
-
-
+window.addEventListener("deviceorientation", function (event) {
+  engine.world.gravity.y = event.beta / 30;
+  engine.world.gravity.x = event.gamma / 30;
+});
 
 // run the engine
 Runner.run(engine);
